@@ -1,6 +1,7 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
+// Using Schema Definition Language-First.
 const typeDefs = `
     schema {
         query: Query
