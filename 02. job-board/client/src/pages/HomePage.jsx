@@ -4,9 +4,9 @@ import { getJobs } from '../lib/graphql/queries';
 
 function HomePage() {
   const [jobs, setJobs] = useState([]);
-  useEffect(
-    () => getJobs().then(setJobs)
-  , []);
+  useEffect(() => {
+      getJobs().then(setJobs)
+    }, []);
 
   return (
     <div>
