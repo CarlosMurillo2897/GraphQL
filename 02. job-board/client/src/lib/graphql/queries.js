@@ -8,7 +8,12 @@ export async function getCompany(id) {
             company(id: $id) {
                 id,
                 name,
-                description
+                description,
+                jobs {
+                    id,
+                    date,
+                    title
+                }
             }
         }`;
     const { company } = await client.request(query, { id });
